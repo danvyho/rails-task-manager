@@ -1,0 +1,13 @@
+<h1>Edit <%= @ids.title %></h1>
+
+<%= form_with model: @ids do |f| %>
+<div class="class">
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.submit %>
+<% end %>
+</div>
+
+<%= link_to 'Back to list', tasks_path%>
